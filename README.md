@@ -50,8 +50,9 @@ http://192.168.0.16:8080/vnc.html
 ````
 
 Use a senha listada no compose:
-
+````
 senha@123
+````
 
 Se ficar tudo preto, tudo bem.. isso é normal
 
