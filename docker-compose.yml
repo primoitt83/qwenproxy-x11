@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  qwenproxy-x11:
+    container_name: qwenproxy-x11
+    restart: always
+    build: .
+    ports:
+      - 8080:8080 ## novnc
+      - 3000:3000 ## proxy 
+    environment:
+      - DISPLAY=:0
+      - PASS=senha@123
+    networks:
+      net:
+        ipv4_address: 172.15.0.15
+    logging:
+      options:
+        max-size: 100M
+
+networks:
+  net:
+    external: true
