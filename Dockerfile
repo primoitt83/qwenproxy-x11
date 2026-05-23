@@ -3,7 +3,7 @@ FROM node:22-bookworm-slim
 
 ## Install x11 dependencies
 RUN \
-  DEBIAN_FRONTEND= && \
+  DEBIAN_FRONTEND=noninteractive && \
   apt update && \
   apt install --no-install-recommends -y \
     curl \
