@@ -26,7 +26,7 @@ pgrep -f "Xvfb|x11vnc|fluxbox|websockify" -l
 162 Xvfb
 ````
 
-Se não aparece os 4x, mate e rode novamente:
+Se não aparecer os 4x, mate e rode novamente:
 ````
 pkill websockify; pkill fluxbox; pkill x11vnc; pkill Xvfb; pkill supervisord
 
