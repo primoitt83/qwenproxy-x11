@@ -18,7 +18,7 @@ docker-compose exec qwenproxy-x11 /bin/bash
 /entrypoint.sh &
 ````
 
-Verificar os processos:
+Verifique os processos:
 ````
 pgrep -f "Xvfb|x11vnc|fluxbox|websockify" -l
 159 fluxbox
